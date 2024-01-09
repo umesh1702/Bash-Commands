@@ -54,7 +54,7 @@ cd ..
 echo "creating a file in the report directory..."
 cd Report
 #we create a summary.txt file in Report folder
-if [ -e summary.txt ]; then
+if [ ! -e summary.txt ]; then
   touch summary.txt
 fi
 ls
