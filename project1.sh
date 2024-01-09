@@ -16,7 +16,7 @@ fi
 
 #creating the sub directories in the directory if it exist we move to one of that dictonary
 echo "creating sub directories...."
-if [ -d Report ] || [ -d Logs] || [ -d Data]; then
+if [ -d Report ] || [ -d Logs ] || [ -d Data ]; then
   ls
   cd Data
   echo "moved to directory Data "
@@ -30,12 +30,12 @@ else
 fi
 #now we create a txt file of 10 in number by using for loop
 echo "creating a 10 text file in data directory....."
-if [ ! -e file1.txt ]; then
+
   for i in {1..10}
   do
    touch file$i.txt
   done
-fi
+
 #we write some text into each of the newly created text files
 echo "writing the text into each file created in data directory...."
 for i in {1..10}
